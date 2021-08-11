@@ -46,3 +46,5 @@ where(filter)/Modify
 # Action
 
 Execution of transformation
+
+Save to file/ print on terminal/count/sum .......
