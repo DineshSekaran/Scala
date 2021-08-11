@@ -12,6 +12,7 @@ res0: Array[org.apache.spark.sql.Row] = Array([0], [1], [2], [3], [4], [5], [6],
 
 
 # RDD
+Immutable/Recovery Quickly and Distributed Data set
 
 sc.parallelize(Seq(1,2,3,4,5,6))
 
@@ -20,3 +21,9 @@ res(may variy).collect()
 sc.parallelize(Seq(1,2,3,4,5,6),2)
 
 .collect()
+
+# Immutable
+
+we cannot change a=6 on RDD which is immutable
+Val a=5
+a=6
