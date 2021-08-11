@@ -17,3 +17,13 @@ res3: String = host	logname	time	method	url	response	bytes	referer	useragent
 
 scala> Input_FileRDD.take(2)
 res4: Array[String] = Array(host	logname	time	method	url	response	bytes	referer	useragent, "199.72.81.55	-	804571201	GET	/history/apollo/	200	6245		")
+# Lets apply a transformation
+  val v_cnt= Input_FileRDD.filter(C => C.contains("countdown.html"))
+v_cnt: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[3] at filter at <console>:26
+
+#  Lets do a action
+scala> v_cnt.count
+res5: Long = 8586                                                               
+
+scala> res5
+res6: Long = 8586
