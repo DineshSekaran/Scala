@@ -16,7 +16,7 @@ res0: Array[org.apache.spark.sql.Row] = Array([0], [1], [2], [3], [4], [5], [6],
 
 
 # RDD
-Immutable/Recovery Quickly and Distributed Data set
+Immutable/Recovery Quickly and Distributed Data set. Partitioned
 
 sc.parallelize(Seq(1,2,3,4,5,6))
 
@@ -27,7 +27,22 @@ sc.parallelize(Seq(1,2,3,4,5,6),2)
 .collect()
 
 # Immutable
-
+RDD itself immutable but still we can use var bt recommended to use val bec of RDD
+RDD content cannnot be changed.
 Val a=5
 
 a=6    we cannot change a=6 on RDD which is immutable
+
+
+# Transformation
+
+Lazy operation Tranformation will not be executed (wont execute untill action is performed)
+
+on memory processing 
+
+where(filter)/Modify 
+
+
+# Action
+
+Execution of transformation
