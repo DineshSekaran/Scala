@@ -24,6 +24,6 @@ sc.parallelize(Seq(1,2,3,4,5,6),2)
 
 # Immutable
 
-we cannot change a=6 on RDD which is immutable
 Val a=5
-a=6
+
+a=6    we cannot change a=6 on RDD which is immutable
