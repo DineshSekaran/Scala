@@ -1,5 +1,9 @@
 # Spark 
 
+
+# Spark Session
+# Spark Context 
+
 Start Spark-shell
 
 scala> val rangeA=spark.range(100).toDF("numbers");
