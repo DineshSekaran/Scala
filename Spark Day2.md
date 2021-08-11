@@ -1,8 +1,15 @@
 # Spark 
 
 
-# Spark Session
+
+
 # Spark Context 
+gives you entry point to sprak session
+
+# Spark Session
+
+Whatever we do spark session is created,all the codes are executed here.
+
 
 Start Spark-shell
 
